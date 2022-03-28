@@ -55,7 +55,7 @@ void loop() {
   } else {
     currentDelay = ACTIVE_DELAY;
     int red = max(min(map(targetDistDiff, 0, idleDistance, 10, 200), 200), 0);
-    int green = max(min(map(targetDistDiff, 0, idleDistance - 100, 190, 0), 200), 0);
+    int green = max(min(map(targetDistDiff, 0, 60, 190, 0), 200), 0);
     Serial.print("red : ");
     Serial.println(red);
     Serial.print("green : ");
